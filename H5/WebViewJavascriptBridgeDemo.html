@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			 function Test() {
+//			 	无参数时,用下列方式
+                window.WebViewJavascriptBridge.callHandler('pushNewPage')
+//              单个参数时,用下列方式
+//              window.WebViewJavascriptBridge.callHandler('Set','参数')
+//				多参数时,用下列方式
+//              window.WebViewJavascriptBridge.callHandler('Set', {'参数1': '111', '参数2':'222'})
+            }
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function setupWebViewJavascriptBridge(callback) {
+                if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+                if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+                window.WVJBCallbacks = [callback];
+                var WVJBIframe = document.createElement('iframe');
+                WVJBIframe.style.display = 'none';
+                // 远端的 src 需要与本地的匹配
+                WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+                document.documentElement.appendChild(WVJBIframe);
+                setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+            }
+			setupWebViewJavascriptBridge(function(bridge) {
+				bridge.registerHandler('Get', function(data, responseCallback) {
+				alert(data);
+				})
+			})
+		</script>
+		<input type="button" id="buttonID" value="pushNewPage" onclick="Test()"/>
+	</body>
+</html>
