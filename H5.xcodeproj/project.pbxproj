@@ -13,8 +13,6 @@
 		275B92381F47E1110015C35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275B92361F47E1110015C35C /* Main.storyboard */; };
 		275B923A1F47E1110015C35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275B92391F47E1110015C35C /* Assets.xcassets */; };
 		275B923D1F47E1110015C35C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275B923B1F47E1110015C35C /* LaunchScreen.storyboard */; };
-		2776B0FC1F48390100C5BE6F /* CallJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776B0FA1F48390100C5BE6F /* CallJSViewController.m */; };
-		2776B0FD1F48390100C5BE6F /* CallJSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2776B0FB1F48390100C5BE6F /* CallJSViewController.xib */; };
 		2776B0FF1F48480300C5BE6F /* WebViewJavascriptBridgeDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2776B0FE1F48480300C5BE6F /* WebViewJavascriptBridgeDemo.html */; };
 		F24BE6BACF9114E4B5DB0498 /* libPods-H5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC16169751C69F922C7442 /* libPods-H5.a */; };
 /* End PBXBuildFile section */
@@ -31,9 +29,6 @@
 		275B923C1F47E1110015C35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275B923E1F47E1110015C35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275B92461F4806F60015C35C /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		2776B0F91F48390100C5BE6F /* CallJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallJSViewController.h; sourceTree = "<group>"; };
-		2776B0FA1F48390100C5BE6F /* CallJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallJSViewController.m; sourceTree = "<group>"; };
-		2776B0FB1F48390100C5BE6F /* CallJSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallJSViewController.xib; sourceTree = "<group>"; };
 		2776B0FE1F48480300C5BE6F /* WebViewJavascriptBridgeDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewJavascriptBridgeDemo.html; sourceTree = "<group>"; };
 		289DE6FFEDDA1B0B9F1B9EA3 /* Pods-H5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5.release.xcconfig"; path = "Pods/Target Support Files/Pods-H5/Pods-H5.release.xcconfig"; sourceTree = "<group>"; };
 		8848B0E4CCEC6373C0B06FBE /* Pods-H5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H5/Pods-H5.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,9 +73,6 @@
 				275B92311F47E1110015C35C /* AppDelegate.m */,
 				275B92331F47E1110015C35C /* ViewController.h */,
 				275B92341F47E1110015C35C /* ViewController.m */,
-				2776B0F91F48390100C5BE6F /* CallJSViewController.h */,
-				2776B0FA1F48390100C5BE6F /* CallJSViewController.m */,
-				2776B0FB1F48390100C5BE6F /* CallJSViewController.xib */,
 				275B92461F4806F60015C35C /* Macro.h */,
 				275B922D1F47E1100015C35C /* Supporting Files */,
 			);
@@ -180,7 +172,6 @@
 			files = (
 				2776B0FF1F48480300C5BE6F /* WebViewJavascriptBridgeDemo.html in Resources */,
 				275B923D1F47E1110015C35C /* LaunchScreen.storyboard in Resources */,
-				2776B0FD1F48390100C5BE6F /* CallJSViewController.xib in Resources */,
 				275B923A1F47E1110015C35C /* Assets.xcassets in Resources */,
 				275B92381F47E1110015C35C /* Main.storyboard in Resources */,
 			);
@@ -245,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				275B92351F47E1110015C35C /* ViewController.m in Sources */,
-				2776B0FC1F48390100C5BE6F /* CallJSViewController.m in Sources */,
 				275B92321F47E1110015C35C /* AppDelegate.m in Sources */,
 				275B922F1F47E1100015C35C /* main.m in Sources */,
 			);
